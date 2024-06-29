@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga">
+  <title>Glitter, Wings and Magic</title>
+  <style>
+    body {
+      font-family: 'Playfair Display', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('bg.jpg');  
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    a {
+      color: #D3AD7A;
+    }
+
+    a:visited {
+      color: #D3AD7A;
+    }
+
+    a:hover {
+      color: #964b00;
+    }
+
+    header {
+      background-color: #302310;
+      font-size: 0.9em;
+      color: antiquewhite;
+      padding: 0px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      overflow: hidden;
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    img {
+      max-width: 300px;
+      height: 445px;
+      margin: 20px 10px;
+      box-shadow: 0 0 20px 0;
+    }
+
+    .logo {
+      max-width: 80px;
+      height: 80px;
+      margin: 0px 0;
+      float: left;
+    }
+
+    p {
+      font-family: 'Calistoga', sans-serif;
+      text-align: left;
+      margin: 0;
+      color: antiquewhite;
+    }
+
+    h2 {
+      font-family: 'Calistoga', sans-serif;
+      text-align: center;
+      margin: 0;
+      color: antiquewhite;
+    }
+
+    h4 {
+      font-family: 'Calistoga', sans-serif;
+      text-align: left;
+      margin: 0;
+      color: antiquewhite;
+    }
+
+    h3 {
+      font-family: 'Calistoga', sans-serif;
+      text-align: left;
+      margin: 0;
+      background-color: #5e3e17;
+      color: antiquewhite;
+    }
+
+    li {
+      font-family: 'Calistoga', sans-serif;
+      color: antiquewhite;
+    }
+
+    .txt_box {
+      float: left;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 520px 0 0;
+      font-size: 50px;
+      color: #ffd700;
+    }
+
+    .rating span {
+      margin: 0 5px;
+    }
+
+    input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid antiquewhite;
+      border-radius: 50%;
+      outline: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input[type="radio"]:checked::before {
+      content: '\2022';
+      font-size: 55px;
+      color: #964b00;
+      line-height: 20px;
+      align-self: center;
+    }
+
+    fieldset legend, label {
+      color: antiquewhite;
+      font-family: 'Calistoga', sans-serif;
+    }
+
+    form {
+      width: 60vw;
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+      padding-bottom: 2em;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    #recommendationField {
+      display: none;
+    }
+  </style>
+  <script>
+    function showRecommendationField() {
+      var recommendationField = document.getElementById('recommendationField');
+      recommendationField.style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+<header>
+  <a href="first.index.html"><img src="logo.jpg" alt="BiblioShelf" class="logo"></a>
+  <div class="txt-box">
+  <h1>Glitter, Wings and Magic</h1>
+  </div>
+  </header>
+
+  <!-- Content container for image, text, and text box -->
+  <div class="content-container">
+    <img src="https://m.media-amazon.com/images/I/61pdPRcbeML._AC_UF894,1000_QL80_.jpg" alt="GlitterWings&Magic">
+    <div class="text-box">
+      <h2><a target="_blank" href="file:///C:/Users/fizza/OneDrive/Documents/Books/SyedaFizza.html">Syeda Fizza</a></h2>
+      <p><strong>Genre: </strong>urban fanatsy, children's book, fantasy adventure, fiction</p>
+      <p><strong>ISBN: </strong>9798417596186</p>
+      <p><strong>Reading age: </strong>8</p>
+      <p><strong>Publication date: </strong>May 30, 2022</p>
+      <h3>Available at: </h3>
+      <ul>
+        <li><a target="_blank" href="https://www.amazon.com/Glitter-wings-magic-Syeda-Fizza-ebook/dp/B0B2Q4MD5N/ref=sr_1_1?crid=56M5Z88IRER1&dib=eyJ2IjoiMSJ9.uv4UVoiIQ8iGLRvpNamlproDpu6qLQrzbe-JmmfsJbxT1CRVtcdcn-oTZigRqypkBws0crFFAG64xzEe3dbu53pA1lC8QoPtXh6IcLuLi2-ImnW6NaRabWwtQ6YpB2kTMffvdiYRRZxyRoYSEmUT9A.jbcCzUH2N8jWRwk2nAEdvMqENKvfYRJTVK0lUdlGD1k&dib_tag=se&keywords=Glitter+wings+and+magic&qid=1705129826&s=digital-text&sprefix=glitter+wings+and+magi%2Cdigital-text%2C302&sr=1-1">Amazon:</a> $ 4.95</li>
+        <li><a target="_blank" href="https://www.instagram.com/glitterwingsandmagic/">Instagram:</a> Rs 500</li>
+    </ul>
+    <h4>Would you like to give review?</h4>
+    <button onclick="showRecommendationField()">Click here</button>
+    <form id="survey-form">
+        <fieldset id="recommendationField">
+            <legend>Review</legend>
+            <legend>Name</legend>
+            <input type="text" required placeholder="Your name">
+            <legend>Rating</legend>
+            <select>
+                <option>Your rating </option>
+                <option><span>&#9733;</span></option>
+                <option><span>&#9733; &#9733;</span></option>
+                <option><span>&#9733; &#9733; &#9733;</span></option>
+                <option><span>&#9733; &#9733; &#9733; &#9733;</span></option>
+                <option><span>&#9733; &#9733; &#9733; &#9733; &#9733;</span></option>
+            </select>
+            <legend>Recommended?</legend>
+            <label><input type="radio" id="yes" name="yes-no" value="yes" checked>Yes</label>
+            <label><input type="radio" id="no" name="yes-no" value="no">No</label>
+            <legend>Thoughts or review:</legend>
+        <textarea required placeholder="Write your review here"></textarea>
+        <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+      <!-- Add your text box content here -->
+    </div>
+  </div>
+  
+  <!-- Star rating section -->
+  <div class="rating">
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+  </div>
+  
+  <!-- Add more content as needed -->
+  <script src="script.js"></script>
+</body>
+</html>

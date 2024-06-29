@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga">
+  <title>Girl in Pieces</title>
+  <style>
+  body {
+            font-family: 'Playfair Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        a {
+            color: #D3AD7A;
+        }
+
+        a:visited {
+            color: #D3AD7A;
+        }
+
+        a:hover {
+            color: #964b00;
+        }
+
+        header {
+            background-color: #302310;
+            font-size: 0.9em;
+            color: antiquewhite;
+            padding: 0px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            overflow: hidden;
+            /* Clear the float */
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line if needed */
+        }
+
+        img {
+            max-width: 300px;
+            height: 445px;
+            margin: 20px 10px;
+            /* Add margin to the right and bottom of the image */
+            box-shadow: 0 0 20px 0;
+        }
+
+        .logo {
+            max-width: 80px;
+            height: 80px;
+            margin: 0px 0;
+            float: left;
+        }
+
+        p {
+            font-family: 'Calistoga', sans-serif;
+            text-align: left;
+            margin: 0;
+            color: antiquewhite;
+        }
+
+        h2 {
+            font-family: 'Calistoga', sans-serif;
+            text-align: center;
+            margin: 0;
+            color: antiquewhite;
+        }
+
+        h4 {
+            font-family: 'Calistoga', sans-serif;
+            text-align: left;
+            margin: 0;
+            color: antiquewhite;
+        }
+
+        h3 {
+            font-family: 'Calistoga', sans-serif;
+            text-align: left;
+            margin: 0;
+            color: antiquewhite;
+            background-color: #5e3e17;
+        }
+
+        li {
+            font-family: 'Calistoga', sans-serif;
+            color: antiquewhite;
+        }
+
+        /* Styles for the star rating */
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 520px 0 0;
+            font-size: 50px;
+            color: #e5de00;
+            /*Gold color for stars */
+        }
+
+        .txt_box {
+            float: left;
+            /* Float the text to the left */
+        }
+
+        .rating span {
+            margin: 0 5px;
+        }
+
+        /* Default styles for radio buttons */
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid antiquewhite;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Styles for the checked state of radio buttons */
+        input[type="radio"]:checked::before {
+            content: '\2022';
+            /* Unicode character for a bullet, you can use other symbols */
+            font-size: 55px;
+            color: #964b00;
+            /* Change this color to the desired color for the checked state */
+            line-height: 20px;
+            align-self: center;
+        }
+        form{
+          width: 60vw;
+          max-width: 500px;
+          min-width: 300px;
+          margin: 0 auto;
+          padding-bottom: 2em;
+        }
+
+        textarea {
+            height: 100px; /* Adjust the height of the textarea as needed */
+        }
+        fieldset legend {
+            color: antiquewhite;
+            /* Change this color to the desired color for the legend */
+            font-family: 'Calistoga', sans-serif;
+        }
+
+        /* Text color for the radio button label */
+        label {
+            color: antiquewhite;
+            /* Change this color to the desired text color */
+            font-family: 'Playfair Display', 'sans-serif';
+        }
+
+        /* Style to hide the recommendation field by default */
+        #recommendationField {
+            display: none;
+        }
+  </style>
+</head>
+<body>
+  <header> 
+  <a href="first.index.html"><img src="logo.jpg" alt="BiblioShelf" class="logo"></a>
+  <div class="txt-box">
+  <h1>Girl in Pieces</h1>
+  </div>
+  </header>
+
+  <!-- Content container for image, text, and text box -->
+  <div class="content-container">
+    <img src="https://static-01.daraz.pk/p/49e01f4ea896a7bee6426171d107f79d.jpg" alt="Girl in Pieces">
+    <div class="text-box">
+      <!-- Add your text box content here -->
+      <h2>Kathleen Glasgow</h2>
+      <p><strong>Genre: </strong>Young Adult, Mental Health, Fiction, Contemporary </p>
+      <p><strong>ISBN: </strong>9781460756126</p>
+      <p><strong>Reading age: </strong>14</p>
+      <p><strong>Publication date: </strong>August 30, 2016</p>
+      <h3>Available at: </h3>
+      <ul>
+        <li><a target="_blank" href="https://www.amazon.com.au/Girl-Pieces-Kathleen-Glasgow/dp/1460756126/ref=sr_1_1?crid=3UNX6QIVNF3JU&dib=eyJ2IjoiMSJ9.tWSyVJe77l4LDH7l0TPYhV1NNPnrIQNIj0CpTUDovKUtHwSXiRcUz3otyqy098-Mwo_tRuoqre7oK5jaulUta9gAiH2rcOLegSneXZNYhhV7EtXUvgdK0PcOku2XyPUKjh1S4lDW-PK9XkHFtmNZ4dgYKtSqjaM3fkm3t-ELe9a5NTeS_4ptv42Ss2ARblK4ouGJq-kIMzbmUkfiUJkUOmEnejX1wx3MmBD8XwyVnlg.TRO7TvYRj24q9QkOGhIDSKeFhMs12e6s3xTawarGxyg&dib_tag=se&keywords=girl+in+pieces+kathleen+glasgow&qid=1719646194&s=books&sprefix=girl+in+%2Cstripbooks%2C466&sr=1-1">Amazon:</a> $ 11.99</li>
+        <li><a target="_blank" href="https://www.libertybooks.com/girl-in-pieces-9781780749457?search=girl%20in%20pieces%20&search_type=all">Liberty Book:</a> Rs 2,295.00</li>
+        <li><a target="_blank" href="https://booksvilla.com.pk/products/girl-in-pieces?_pos=1&_sid=3ac9d0e75&_ss=r">Books Villa:</a> Rs 725.00</li>
+        <li><a target="_blank" href="https://duabookpalace.com/products/girl-in-pieces?_pos=1&_sid=88670e57c&_ss=r">Dua Book Palace:</a> Rs 345.00</li>
+        <li><a target="_blank" href="https://onlinebooksoutlet.com/products/girl-in-pieces-book-buy-online?_pos=1&_psq=girl+in+piec&_ss=e&_v=1.0">Online Book Outlet:</a> Rs 1,045.00</li>
+    </ul>
+      <h4>Would you like to give review?</h4>
+      <button onclick="showRecommendationField()">Click here</button>
+      <form id="survey-form">
+          <fieldset id="recommendationField">
+              <legend>Review</legend>
+              <legend>Name</legend>
+              <input type="text" required placeholder="Your name">
+              <legend>Rating</legend>
+              <select>
+                  <option>Your rating </option>
+                  <option><span>&#9733;</span></option>
+                  <option><span>&#9733; &#9733;</span></option>
+                  <option><span>&#9733; &#9733; &#9733;</span></option>
+                  <option><span>&#9733; &#9733; &#9733; &#9733;</span></option>
+                  <option><span>&#9733; &#9733; &#9733; &#9733; &#9733;</span></option>
+              </select>
+              <legend>Recommended?</legend>
+              <label><input type="radio" id="yes" name="yes-no" value="yes" checked>Yes</label>
+              <label><input type="radio" id="no" name="yes-no" value="no">No</label>
+              <legend>Thoughts or review:</legend>
+          <textarea required placeholder="Write your review here"></textarea>
+          <button type="submit">Submit</button>
+          </fieldset>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Star rating section -->
+  <div class="rating">
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+  </div>
+  
+  <!-- Add more content as needed -->
+  <script>
+    function showRecommendationField() {
+        var recommendationField = document.getElementById('recommendationField');
+        recommendationField.style.display = 'block';
+    }
+</script>
+</body>
+</html>

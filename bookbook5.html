@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga">
+  <title>The Hawthorne Legacy</title>
+  <style>
+    body {
+      font-family: 'Playfair Display', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('bg.jpg');  
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    a {
+      color: #D3AD7A;
+    }
+
+    a:visited {
+      color: #D3AD7A;
+    }
+
+    a:hover {
+      color: #964b00;
+    }
+
+    header {
+      background-color: #302310;
+      font-size: 0.9em;
+      color: antiquewhite;
+      padding: 0px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      overflow: hidden;
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    img {
+      max-width: 300px;
+      height: 445px;
+      margin: 20px 10px;
+      box-shadow: 0 0 20px 0;
+    }
+
+    .logo {
+      max-width: 80px;
+      height: 80px;
+      margin: 0px 0;
+      float: left;
+    }
+
+    p {
+      font-family: 'Calistoga', sans-serif;
+      text-align: left;
+      margin: 0;
+      color: antiquewhite;
+    }
+
+    h2 {
+      font-family: 'Calistoga', sans-serif;
+      text-align: center;
+      margin: 0;
+      color: antiquewhite;
+    }
+
+    h4 {
+      font-family: 'Calistoga', sans-serif;
+      text-align: left;
+      margin: 0;
+      color: antiquewhite;
+    }
+
+    h3 {
+      font-family: 'Calistoga', sans-serif;
+      text-align: left;
+      margin: 0;
+      background-color: #5e3e17;
+      color: antiquewhite;
+    }
+
+    li {
+      font-family: 'Calistoga', sans-serif;
+      color: antiquewhite;
+    }
+
+    .txt_box {
+      float: left;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 520px 0 0;
+      font-size: 50px;
+      color: #ffd700;
+    }
+
+    .rating span {
+      margin: 0 5px;
+    }
+
+    input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid antiquewhite;
+      border-radius: 50%;
+      outline: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input[type="radio"]:checked::before {
+      content: '\2022';
+      font-size: 55px;
+      color: #964b00;
+      line-height: 20px;
+      align-self: center;
+    }
+
+    fieldset legend, label {
+      color: antiquewhite;
+      font-family: 'Calistoga', sans-serif;
+    }
+
+    form {
+      width: 60vw;
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+      padding-bottom: 2em;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    #recommendationField {
+      display: none;
+    }
+  </style>
+  <script>
+    function showRecommendationField() {
+      var recommendationField = document.getElementById('recommendationField');
+      recommendationField.style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+<header>
+  <a href="first.index.html"><img src="logo.jpg" alt="BiblioShelf" class="logo"></a>
+  <div class="txt-box">
+    <h1>The Hawthorne Legacy</h1>
+  </div>
+</header>
+
+<div class="content-container">
+  <img src="legacy.jpg" alt="The Hawthorne Legacy">
+  <div class="text-box">
+    <h2><em>Inheritance games book # 2</em></h2>
+    <h2>Jennifer Lynn Barnes</h2>
+    <p><strong>Genre: </strong>mystery, young adult, romance, fiction, mystery thriller</p>
+    <p><strong>ISBN: </strong>9780241480748</p>
+    <p><strong>Reading age: </strong>12</p>
+    <p><strong>Publication date: </strong>September 7, 2021</p>
+    <h3>Available at: </h3>
+    <ul>
+      <li><a target="_blank" href="https://www.amazon.com/Hawthorne-Legacy-Inheritance-Games/dp/031610518X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Amazon:</a> $8.24</li>
+      <li><a target="_blank" href="https://www.libertybooks.com/the-hawthorne-legacy-tiktok-made-me-buy-it-the-inheritance-games-2-9780241480724">Liberty Book Store:</a> Rs 2,295.00</li>
+      <li><a target="_blank" href="https://onlinebooksoutlet.com/products/the-hawthorne-legacy-book-buy?_pos=2&_psq=hawth&_ss=e&_v=1.0">Online Books outlet:</a> Rs 645.00</li>
+      <li><a target="_blank" href="https://booksvilla.com.pk/products/book-2?_pos=1&_sid=61cf5a4f1&_ss=r">Books Villa:</a> Rs 590.00</li>
+      <li><a target="_blank" href="https://duabookpalace.com/products/the-hawthorne-legacy?_pos=2&_sid=73c90c8a1&_ss=r">Dua Book Palace:</a> Rs 375.00</li>
+    </ul>
+    <h4>Would you like to give review?</h4>
+    <button onclick="showRecommendationField()">Click here</button>
+    <form id="survey-form">
+      <fieldset id="recommendationField">
+        <legend>Review</legend>
+        <legend>Name</legend>
+        <input type="text" required placeholder="Your name">
+        <legend>Rating</legend>
+        <select>
+          <option>Your rating</option>
+          <option>&#9733;</option>
+          <option>&#9733; &#9733;</option>
+          <option>&#9733; &#9733; &#9733;</option>
+          <option>&#9733; &#9733; &#9733; &#9733;</option>
+          <option>&#9733; &#9733; &#9733; &#9733; &#9733;</option>
+        </select>
+        <legend>Recommended?</legend>
+        <label><input type="radio" id="yes" name="yes-no" value="yes" checked>Yes</label>
+        <label><input type="radio" id="no" name="yes-no" value="no">No</label>
+        <legend>Thoughts or review:</legend>
+        <textarea required placeholder="Write your review here"></textarea>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<div class="rating">
+  <span>&#9733;</span>
+  <span>&#9733;</span>
+  <span>&#9733;</span>
+  <span>&#9733;</span>
+  <span>&#9733;</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <link rel="stylesheet" href="styles.css">
+  <title>Book List</title>
+   <style>
+    header {
+      background-color: #302310;
+      font-size: 0.9em;
+      color: antiquewhite;
+      padding: 0px;
+      text-align: center;
+      font-family:'Playfair Display', serif;
+      overflow: hidden; /* Clear the float */
+    }
+    img {
+      max-width: 80px;
+      height: 80px;
+      margin: 90px, 0px;
+      float: left; /* Float the image to the right */
+      box-shadow: 0 0 10px 0 #FADE7E;
+    }
+    .text-box {
+      float: left; /* Float the text to the left */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg">
+    <div class="text-box">
+      <h1>BiblioShelf </h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <button type="submit">Search</button>
+    </div>
+  </header>
+  <div class="book-list" id="bookList">
+    <!-- Book items will be dynamically added here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

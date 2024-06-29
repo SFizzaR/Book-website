@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calistoga">
+  <title>Insurgent</title>
+  <style>
+  body {
+            font-family: 'Playfair Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        a {
+            color: #D3AD7A;
+        }
+
+        a:visited {
+            color: #D3AD7A;
+        }
+
+        a:hover {
+            color: #964b00;
+        }
+
+        header {
+            background-color: #302310;
+            font-size: 0.9em;
+            color: antiquewhite;
+            padding: 0px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            overflow: hidden;
+            /* Clear the float */
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line if needed */
+        }
+
+        img {
+            max-width: 300px;
+            height: 445px;
+            margin: 20px 10px;
+            /* Add margin to the right and bottom of the image */
+            box-shadow: 0 0 20px 0;
+        }
+
+        .logo {
+            max-width: 80px;
+            height: 80px;
+            margin: 0px 0;
+            float: left;
+        }
+
+        p {
+            font-family: 'Calistoga', sans-serif;
+            text-align: left;
+            margin: 0;
+            color: antiquewhite;
+        }
+
+        h2 {
+            font-family: 'Calistoga', sans-serif;
+            text-align: center;
+            margin: 0;
+            color: antiquewhite;
+        }
+
+        h4 {
+            font-family: 'Calistoga', sans-serif;
+            text-align: left;
+            margin: 0;
+            color: antiquewhite;
+        }
+
+        h3 {
+            font-family: 'Calistoga', sans-serif;
+            text-align: left;
+            margin: 0;
+            color: antiquewhite;
+            background-color: #5e3e17;
+        }
+
+        li {
+            font-family: 'Calistoga', sans-serif;
+            color: antiquewhite;
+        }
+
+        /* Styles for the star rating */
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 520px 0 0;
+            font-size: 50px;
+            color: #e5de00;
+            /*Gold color for stars */
+        }
+
+        .txt_box {
+            float: left;
+            /* Float the text to the left */
+        }
+
+        .rating span {
+            margin: 0 5px;
+        }
+
+        /* Default styles for radio buttons */
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid antiquewhite;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Styles for the checked state of radio buttons */
+        input[type="radio"]:checked::before {
+            content: '\2022';
+            /* Unicode character for a bullet, you can use other symbols */
+            font-size: 55px;
+            color: #964b00;
+            /* Change this color to the desired color for the checked state */
+            line-height: 20px;
+            align-self: center;
+        }
+        form{
+          width: 60vw;
+          max-width: 500px;
+          min-width: 300px;
+          margin: 0 auto;
+          padding-bottom: 2em;
+        }
+
+        textarea {
+            height: 100px; /* Adjust the height of the textarea as needed */
+        }
+        fieldset legend {
+            color: antiquewhite;
+            /* Change this color to the desired color for the legend */
+            font-family: 'Calistoga', sans-serif;
+        }
+
+        /* Text color for the radio button label */
+        label {
+            color: antiquewhite;
+            /* Change this color to the desired text color */
+            font-family: 'Playfair Display', 'sans-serif';
+        }
+
+        /* Style to hide the recommendation field by default */
+        #recommendationField {
+            display: none;
+        }
+  </style>
+</head>
+<body>
+  <header> 
+  <a href="first.index.html"><img src="logo.jpg" alt="BiblioShelf" class="logo"></a>
+  <div class="txt-box">
+  <h1>Insurgent</h1>
+  </div>
+  </header>
+
+  <!-- Content container for image, text, and text box -->
+  <div class="content-container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9c/Insurgent_%28book%29.jpeg" alt="Insurgent">
+    <div class="text-box">
+      <!-- Add your text box content here -->
+      <h2><em>Divergent book # 2</em></h2>
+      <h2>Veronica Roth</h2>
+      <p><strong>Genre: </strong>Young Adult, Dystopia, Fantasy, Fiction, Science Fiction </p>
+      <p><strong>ISBN: </strong>9788851165741</p>
+      <p><strong>Reading age: </strong>13</p>
+      <p><strong>Publication date: </strong>May 1, 2012</p>
+      <h3>Available at: </h3>
+      <ul>
+        <li><a target="_blank" href="https://www.amazon.com.au/Insurgent-Veronica-Roth/dp/8851165742/ref=sr_1_3?crid=2B33NK8654CHQ&dib=eyJ2IjoiMSJ9.T39MfsnRVmraTRgawozF8T9iDbmPG7ms4pPVmkvAuXw7neAy873e5vUidy-YK_zOizXF750_FEVf1BY4-nLolIYRz2IrRgePIaLZ0zIYIP1Qow5MIg7YXouoGy4a0gsOXl8r7CcYTHNMmcGH3LJ5m7s6FBoQge847YCeckojjH1KNG4NC3jTtTlxBO0zP9foDqxRJC-i68uVC74EV7PyqtJ-2BwDJJZ_YjT_YjSSkTg.gIZ7fFa4FwS3VerP7MvOiY_JZyb79oQa6U_1lPcEgdk&dib_tag=se&keywords=insurgent&qid=1719641801&s=books&sprefix=insurgent%2Cstripbooks%2C346&sr=1-3">Amazon:</a> $ 68.46</li>
+        <li><a target="_blank" href="https://www.libertybooks.com/insurgent-9780007536740?search=insurgent%20&search_type=all">Liberty Book Store:</a> Rs 1,595.00</li>
+        <li><a target="_blank" href="https://onlinebooksoutlet.com/products/insurgent-buy-online?_pos=1&_sid=b47cba043&_ss=">Online Books Outlet:</a> Rs 1,045.00</li>
+        <li><a target="_blank" href="https://booksvilla.com.pk/products/insurgent?_pos=1&_sid=122dd1a50&_ss=r">Books Villa:</a> Rs 590.00</li>
+        <li><a target="_blank" href="https://readings.com.pk/book/1406134">Readings:</a> Rs 1,483.00</li>
+      </ul>
+      <h4>Would you like to give review?</h4>
+      <button onclick="showRecommendationField()">Click here</button>
+      <form id="survey-form">
+          <fieldset id="recommendationField">
+              <legend>Review</legend>
+              <legend>Name</legend>
+              <input type="text" required placeholder="Your name">
+              <legend>Rating</legend>
+              <select>
+                  <option>Your rating </option>
+                  <option><span>&#9733;</span></option>
+                  <option><span>&#9733; &#9733;</span></option>
+                  <option><span>&#9733; &#9733; &#9733;</span></option>
+                  <option><span>&#9733; &#9733; &#9733; &#9733;</span></option>
+                  <option><span>&#9733; &#9733; &#9733; &#9733; &#9733;</span></option>
+              </select>
+              <legend>Recommended?</legend>
+              <label><input type="radio" id="yes" name="yes-no" value="yes" checked>Yes</label>
+              <label><input type="radio" id="no" name="yes-no" value="no">No</label>
+              <legend>Thoughts or review:</legend>
+          <textarea required placeholder="Write your review here"></textarea>
+          <button type="submit">Submit</button>
+          </fieldset>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Star rating section -->
+  <div class="rating">
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+    <span>&#9733;</span>
+  </div>
+  
+  <!-- Add more content as needed -->
+  <script>
+    function showRecommendationField() {
+        var recommendationField = document.getElementById('recommendationField');
+        recommendationField.style.display = 'block';
+    }
+</script>
+</body>
+</html>
