@@ -8,7 +8,7 @@ BiblioShelf is a website designed to provide detailed information about various 
 - **Purchase Links**: Provides links to various online stores for purchasing books.
 - **Review Section**: Allows users to submit reviews and ratings for each book.
 
-## Possible Future Additions
+## Future Enhancements
 - **Search Functionality**: Users can search for books by name or author name.
 - **Star Ratings**: Implement a star rating system based on user input for each book.
 - **Review Section Enhancement**: Allow users to add detailed reviews directly on the book pages.
