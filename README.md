@@ -16,7 +16,6 @@ BiblioShelf is a website designed to provide detailed information about various 
 ## Technologies Used
 - HTML
 - CSS
-- Google Fonts
 
 ## Setup Instructions
 1. Clone the repository to your local machine using:
